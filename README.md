@@ -25,3 +25,5 @@ cd s3-upload-service npm run start
 docker compose up -d
 
 ####Note: .env files are required to run this application. You can find the files here : https://srhk-my.sharepoint.com/:f:/g/personal/11026697_stud_hochschule-heidelberg_de/Euyq0vrKR2ZCs8OI4OZumckBeoGAFX1n8S-UdlbrfvL9nA?e=KONC7O
+
+Docker file - https://hub.docker.com/repository/docker/9988774/sad_2023_team_5/general
