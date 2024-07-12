@@ -1,0 +1,89 @@
+#viewAllFreeLancersPane {
+    width: 80.5%;
+    height: 100%;
+    margin-left: 22px;
+    border-radius: 5px;
+    position:absolute;
+    left: 240px;
+    top: 78px;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+    /* overflow-y: scroll; */
+    justify-content: space-around;
+}
+
+.scroll  {
+    /* padding: 5px; */
+    overflow:scroll;
+    /* overflow-x: hidden; */
+}
+
+.scroll::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  */
+    border-radius: 10px;
+    background: #f1f1f1;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 20px #888; 
+    /* background: ; */
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 20px rgb(39, 39, 39); 
+}
+
+.labelStyleViewAll {
+    /* margin-top: 10px; */
+    margin-bottom: 15px;
+    margin-left: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    width: 100%;
+    margin: 2px !important;
+    text-align: center !important;
+}
+
+/* h2 {
+    margin-bottom: 20px;
+} */
+
+#imageDataCardsPane {
+    display: flex;
+    width: 91%;
+    height: 100%;
+    /* background-color: lightcoral; */
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.homeCardStyleAll {
+    background-color: #F3ECF6;
+    width: 22%;
+    height: 47%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 25px;
+    padding-bottom: 5px;
+}

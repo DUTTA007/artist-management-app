@@ -1,0 +1,174 @@
+#bandRequestsPane {
+    /* background-color: #F3ECF6; */
+    width: 80.5%;
+    height: 98%;
+    margin-left: 22px;
+    border-radius: 5px;
+    position:absolute;
+    left: 240px;
+    top: 80px;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* align-items: center; */
+    overflow-y: auto;
+}
+
+#eventBandR{
+    margin: 7px !important;
+    font-size: 14px !important;
+    text-align: left !important;
+}
+
+#pStyle {
+    text-align: left !important;
+    margin: 4px !important;
+    font-size: 14px;
+}
+#pStyle1 {
+    text-align: left !important;
+    margin: 6px !important;
+    font-size: 14px;
+}
+
+.bStyle {
+    font-size: 15px !important;
+    margin-bottom: 10px !important;
+}
+
+.bandRequestsCardStyle {
+    background-color: #F3ECF6;
+    width: 31%;
+    height: 42%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    margin-left: 19px;
+}
+
+.bandRequestsCardStyleClient {
+    background-color: #F3ECF6;
+    width: 25%;
+    height: 32%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    margin-left: 50px;
+}
+
+.wrapDivBand {
+    display: flex;
+    width: 100%;
+    height: 82%;
+    /* background-color: aquamarine; */
+}
+
+.bandColoredBandDiv {
+    width: 8px;
+    height: 95%;
+    background-color: #a278d9;
+    margin-left: 8px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.bandColoredBandDivPink {
+    width: 8px;
+    height: 95%;
+    background-color: rgb(240, 88, 187);
+    margin-left: 8px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.bandColoredBandDivBlue {
+    width: 8px;
+    height: 95%;
+    background-color: rgb(66, 218, 130);
+    margin-left: 8px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.bandColoredBandDivYellow {
+    width: 9px;
+    height: 95%;
+    background-color: rgb(85, 191, 240);
+    margin-left: 8px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.bandColoredBandDivOrange {
+    width: 8px;
+    height: 95%;
+    background-color: rgb(245, 171, 53);
+    margin-left: 8px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.dateDestinationDiv {
+    width: 80%;
+    height: 100%;
+    /* background-color: lightsalmon; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    padding-top: 10px;
+}
+
+.dateDestinationDivClient {
+    width: 84%;
+    height: 100%;
+    /* background-color: lightsalmon; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    /* padding-top: 10px; */
+}
+
+.acceptDeclineMainDiv {
+    width: 100%;
+    height: 18%;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 6px;
+}
+
+.doneBandCloseButtonStyle {
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    margin-right: 14px;
+}
+
+.doneBandCloseIconStyle {
+    font-size: 30px !important;
+    color: white;
+}
+
+.doneBandButtonStyle {
+    /* background-color: #25be2d; */
+    background-image: linear-gradient(to bottom right, #45bc0f, #a2f77b);
+}
+
+.closeBandButtonStyle {
+    /* background-color: #f38888; */
+    background-image: linear-gradient(to bottom right, #fa2690, #fc90c6);
+}

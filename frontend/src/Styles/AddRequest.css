@@ -1,0 +1,98 @@
+#addRequestPane {
+    background-color: #F3ECF6;
+    width: 80%;
+    height: 98%;
+    margin-left: 22px;
+    border-radius: 5px;
+    position:absolute;
+    left: 240px;
+    top: 80px;
+    /* padding: 10px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#titleContainer {
+    height: 15%;
+    padding-left: 20px;
+    /* background-color: darkcyan; */
+}
+
+.titleStyle {
+    color: #030372;
+}
+
+#fieldsOuterContainer {
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#fieldsContainerLeft {
+    height: 100%;
+    width: 50%;
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* padding-right: 10%; */
+    padding-right: 5%;
+}
+
+#fieldsContainerRight {
+    height: 100%;
+    width: 50%;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5%;
+}
+
+#addRequestButtonContainer {
+    height: 20%;
+    /* background-color: lightpink; */
+    display: flex;
+    /* width: 80%; */
+    justify-content: center;
+    padding-top: 18px;
+    justify-content: space-around;
+}
+
+.inputFieldSignUp1 {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.inputFieldLabel1 {
+    margin-bottom: 10px;
+    color: #04284e;
+}
+
+.inputFieldLabelExtended1 {
+    margin-top: 10px;
+}
+
+#datePickerField1 {
+    width: 98%;
+    height: 34px !important;
+}
+
+.inputFieldSpace1 {
+    height: 32px;
+}
+
+.inputFieldSpace1Right {
+    height: 33px;
+}
+
+#addRequestButton {
+    width: 12%;
+    height: 34px;
+    border: none;
+    background-image: linear-gradient(to bottom right, #4E46A2, #a39bfc);
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}

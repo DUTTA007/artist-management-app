@@ -1,0 +1,124 @@
+#eventRequestPane {
+  width: 85%;
+  height: 95%;
+  /* background-color: rgb(177, 117, 222);  */
+  margin-left: 10px;
+  margin-right: 22px;
+  position:absolute;
+  left: 220px;
+  top: 120px;
+  display: flex;
+  padding-left: 50px;
+  flex-direction: column;
+}
+
+#eventCardStyle {
+  height: 60%;
+  width: 100%;
+  font-size: 2px;
+  font-style: normal;
+  align-items: center;
+  background-color: #a579f3;
+  margin-left: 50px;
+  margin-top: 10px;
+  padding: 16px;
+  text-align: center;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+ 
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 45%;
+  padding: 0 10px;
+  
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 0px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the counter cards */
+.card {
+  height: 50%;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(21, 8, 8, 0.2);
+  background-color: #F3ECF6;
+  font-size: 12px;
+  text-align: left;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 80px;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.requestsList{
+  padding: 5px;
+  width: 85%;
+  height: 10%;
+  margin-left: 40px;
+}
+
+.requestSelect{
+  text-align: center;
+  background-color: #c2b9e1;
+  width: 95%;
+  height: 55%;
+  
+}
+
+
+
+.Selection{
+  width: 50%;
+  height: 30%;
+ 
+}
+
+
+.sendRequests{
+  margin-top: 10px;
+    /* width: 35%; */
+    height: 22px;
+    border: none;
+    background-image: linear-gradient(to bottom right, #1e81b0, #abdbe3);
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+  
+  
+}
+
+#fieldsPara {
+  
+  text-align: left !important;
+}
+
+
+
+
+
+
+
+
+
+
+

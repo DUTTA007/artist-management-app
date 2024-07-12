@@ -1,0 +1,570 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "Muscians Management - OpenAPI 3.0",
+        "description": "One documentation page for all the APIs",
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {
+            "email": ""
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.11"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:3001"
+        }
+    ],
+    "tags": [
+        {
+            "name": "User",
+            "description": "All user related requests"
+        },
+        {
+            "name": "Artist",
+            "description": "All artist related requests"
+        },
+        {
+            "name": "Band",
+            "description": "All band related requests"
+        },
+        {
+            "name": "Client related requests",
+            "description": "All client related requests"
+        }
+    ],
+    "paths": {
+        "/api/user": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Get all Users",
+                "description": "Display all the users",
+                "operationId": "getAllUsers",
+                "responses": {
+                    "200": {
+                        "description": "Get all Users successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "items": {
+                                        "$ref": "#/components/schemas/User"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "No Users found"
+                    },
+                    "500": {
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        },
+        "/api/user/id/{id}": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Get registered User by Id",
+                "description": "description",
+                "operationId": "getUserById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "User Id of desired User",
+                        "required": true,
+                        "default": "63cef7e50e4632138e25c814"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Got User successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "items": {
+                                        "$ref": "#/components/schemas/User"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "User not found"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        },
+        "/api/user/role/{id}": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Get Users by Role",
+                "description": "description",
+                "operationId": "getUserByRole",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Role of desired User",
+                        "required": true,
+                        "default": "freelancer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Got User successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "items": {
+                                        "$ref": "#/components/schemas/User"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "User not found"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        },
+        "/user/id/{id}": {
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Update User Password",
+                "description": "description",
+                "operationId": "updateUserProfile",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "User Id of desired User",
+                        "required": true,
+                        "default": "63cef7e50e4632138e25c814"
+                    }
+                ],
+                "requestBody": {
+                    "description": "New Profile Data of User",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/User"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Update successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "items": {
+                                        "$ref": "#/components/schemas/User"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "User not found"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Unauthorized or missing parameter"
+                    }
+                }
+            }
+        },
+        "/user/login": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Login User by Id and password",
+                "description": "description",
+                "operationId": "login",
+                "requestBody": {
+                    "description": "Login Data of User",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Login"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "User Logged In successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "items": {
+                                        "$ref": "#/components/schemas/Login"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "User not found"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Unauthorized or missing parameter"
+                    }
+                }
+            }
+        },
+        "/user/signup": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Register new user",
+                "description": "signup new user",
+                "operationId": "signup",
+                "requestBody": {
+                    "description": "Register new User",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UserRegister"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Registered successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "items": {
+                                        "$ref": "#/components/schemas/UserRegister"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Unauthorized or missing parameter"
+                    }
+                }
+            }
+        },
+    "/api/user/email/{id}": {
+        "delete": {
+            "tags": [
+                "User"
+            ],
+            "summary": "Delete User by Email",
+            "description": "description",
+            "operationId": "deleteUserByEmail",
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "description": "User Id of desired User",
+                    "required": true,
+                    "default": "johndoe@gmail.com"
+                }
+            ],
+            "responses": {
+                "200": {
+                    "description": "User deleted successfully",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "items": {
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    }
+                },
+                "404": {
+                    "description": "User not found"
+                },
+                "400": {
+                    "description": "Bad Request"
+                },
+                "500": {
+                    "description": "Unauthorized or missing parameter"
+                }
+            }
+         }
+    },    
+    "/api/artistRequests": {
+        "get": {
+            "tags": [
+                "Artist"
+            ],
+            "summary": "Get all artists",
+            "description": "Display all the artists",
+            "operationId": "getAllartists",
+            "responses": {
+                "200": {
+                    "description": "Get all artists successful",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "items": {
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    }
+                },
+                "404": {
+                    "description": "No artists found"
+                },
+                "500": {
+                    "description": "Unauthorized"
+                }
+            }
+        }
+        },
+    "components": {
+        "schemas": {
+            "User": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "default": "",
+                        "decription": "ID of the user"
+                    },
+                    "address": {
+                        "type": "object",
+                        "properties": {
+                            "city": {
+                                "type": "string",
+                                "default": "Heidelberg",
+                                "decription": "City of the user"
+                            },
+                            "country" : {
+                                "type": "string",
+                                "default": "Germany",
+                                "decription": "Country of the user"
+                            }, 
+                            "streetName" : {
+                                "type": "string",
+                                "default": "default",
+                                "decription": "Street of the user"
+                            },
+                            "streetNumber" : {
+                                "type": "number",
+                                "default": "default",
+                                "decription": "Street of the user"
+                            },
+                            "pincode" : {
+                                "type": "number",
+                                "default": "default",
+                                "decription": "Pincode of the user"
+                            }
+                        }
+                    },
+                    "email": {
+                        "type": "string",
+                        "default": "johndoe@abc.com",
+                        "decription": "EMail of the User"
+                    },
+                    "password": {
+                        "type": "string",
+                        "default": "P@ssW0rd123!",
+                        "decription": "Password of the User"
+                    },
+                    "role": {
+                        "type": "string",
+                        "default": "Artist",
+                        "decription": "Role of the User"
+                    },
+                    "contactNumber": {
+                        "type": "number",
+                        "default": "+496995959",
+                        "decription": "Phone number of the User"
+                    },
+                    "dateOfBirth": {
+                        "type": "string",
+                        "default": "2000-01-15",
+                        "decription": "Password of the User"
+                    },
+                    "firstName": {
+                        "type": "string",
+                        "default": "John",
+                        "decription": "Lastname of the User"
+                    },
+                    "imageURL": {
+                        "type": "string",
+                        "default": "",
+                        "decription": "Photo url of the User"
+                    },
+                    "companyName" : {
+                        "type": "string",
+                        "default": "",
+                        "decription": "Name of the company of the client"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "default": "Doe",
+                        "decription": "Lastname of the User"
+                    }                    
+                }
+            },
+            "Login": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "required": true,
+                        "decription": "EMail as Username for User to log in",
+                        "default": "john.doe@gmail.com"
+                    },
+                    "password": {
+                        "type": "string",
+                        "required": true,
+                        "decription": "Password for User to log in",
+                        "default": "Pass@123"
+                    }
+                }
+            },
+        "UserRegister": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "object",
+                    "properties": {
+                        "city": {
+                            "type": "string",
+                            "default": "Heidelberg",
+                            "decription": "City of the user"
+                        },
+                        "country" : {
+                            "type": "string",
+                            "default": "Germany",
+                            "decription": "Country of the user"
+                        },  "streetName" : {
+                            "type": "string",
+                            "default": "Abendakademia",
+                            "decription": "Street of the user"
+                        },
+                        "pinCode" : {
+                            "type": "string",
+                            "default": "68169",
+                            "decription": "Pincode of the user"
+                        }                      
+                        
+                    }
+                },
+                "email": {
+                    "type": "string",
+                    "default": "johndoe@abc.com",
+                    "decription": "EMail of the User"
+                },
+                "instrument": {
+                    "type": "string",
+                    "default": "Guitar",
+                    "decription": "Instrument used by the User"
+                },
+                "password": {
+                    "type": "string",
+                    "default": "Password@123!",
+                    "decription": "Password of the User"
+                },
+                "role": {
+                    "type": "string",
+                    "default": "freelancer",
+                    "decription": "Role of the User"
+                },
+                "contactNumber": {
+                    "type": "string",
+                    "default": "+496995959",
+                    "decription": "Phone number of the User"
+                },
+                "dateOfBirth": {
+                    "type": "string",
+                    "default": "2000-01-15",
+                    "decription": "DOB of the User"
+                },
+                "firstName": {
+                    "type": "string",
+                    "default": "John",
+                    "decription": "Lastname of the User"
+                },
+                "imageURL": {
+                    "type": "string",
+                    "default": "",
+                    "decription": "Photo url of the User"
+                },
+                "companyName": {
+                    "type": "string",
+                    "default": "",
+                    "decription": "Company of the User"
+                },
+                "lastName": {
+                    "type": "string",
+                    "default": "Doe",
+                    "decription": "Lastname of the User"
+                },
+                "bio": {
+                    "type": "string",
+                    "default": "This is my bio ",
+                    "decription": "Bio of the User"
+                }
+                                   
+            }
+        }
+        }
+    },
+        "securitySchemes": {
+            "Authorization": {
+                "type": "http",
+                "scheme": "bearer",
+                "name": "auth-token",
+                "bearerFormat": "JWT",
+                "in": "header"
+                
+            }
+        }
+    },
+    "security": [
+        {
+            "Authorization": []
+        }
+    ]
+}
+

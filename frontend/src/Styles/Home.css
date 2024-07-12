@@ -1,0 +1,104 @@
+#homePane {
+    /* background-color: #F3ECF6; */
+    width: 80.5%;
+    height: 100%;
+    margin-left: 22px;
+    border-radius: 5px;
+    position:absolute;
+    left: 240px;
+    top: 78px;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    align-items: flex-start;
+    /* overflow-y: scroll; */
+    justify-content: space-around;
+}
+
+p {
+    width: 100%;
+    margin: 4px !important;
+    text-align: center;
+    font-size: 13px !important;
+    color: rgb(57, 4, 108);
+    /* margin-bottom: 4px !important; */
+}
+
+h4 {
+    margin: 12px;
+    color: rgb(90, 4, 172);
+}
+
+a {
+    color: blue;
+}
+
+#freelancerViewDiv {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 46%;
+    width: 100%;
+    /* margin-top: 20px; */
+}
+
+.homeCardStyle {
+    background-color: #F3ECF6;
+    width: 23%;
+    height: 95%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+
+.labelStyle {
+    margin-top: 10px;
+    /* margin-bottom: 6px; */
+    margin-left: 16px;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    color: rgb(90, 4, 172);
+}
+
+#imageDataCardsPaneHome {
+    display: flex;
+    width: 89%;
+    height: 94%;
+    /* background-color: lightcoral; */
+    justify-content: space-around;
+}
+
+.scroll {
+    overflow-x: scroll;
+}
+
+#viewButtonDiv{
+    display: flex;
+    width: 9%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    justify-content: center;
+    align-items: center;
+}
+
+#viewButton {
+    width: 70px;
+    height: 30px;
+}
+
+.imgStyle {
+    margin-top: 9px;
+}

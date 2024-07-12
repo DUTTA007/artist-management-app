@@ -1,0 +1,40 @@
+name: MERN CI
+
+on:
+  push:
+    branches: [ "dev" ]
+  pull_request:
+    branches: [ "dev" , "main"]
+
+env:
+  DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+  DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Build and Push Frontend
+      run: |
+        cd frontend
+        docker build -t ${{secrets.DOCKER_REPO}}:frontend .
+        docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD 
+        docker push ${{secrets.DOCKER_REPO}}:frontend
+
+    - name: Build and Push Backend
+      run: |
+        cd backend
+        docker build -t ${{secrets.DOCKER_REPO}}:backend .
+        docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD 
+        docker push ${{secrets.DOCKER_REPO}}:backend
+
+    - name: Build and Push S3 Service
+      run: |
+        cd s3-upload-service
+        docker build -t ${{secrets.DOCKER_REPO}}:s3service .
+        docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD 
+        docker push ${{secrets.DOCKER_REPO}}:s3service

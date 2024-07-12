@@ -1,0 +1,33 @@
+table, th {
+    border-bottom: 1px solid;
+}
+
+tr{
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
+}
+
+table {
+    margin-bottom: 8px;
+}
+
+#addMemberButton {
+    border: none;
+    background-image: linear-gradient(to bottom right, #1e81b0, #abdbe3);
+    border-radius: 5px;
+    color: white;
+    font-size: 11px;
+    height: 25px;
+}
+
+/* .tableHead {
+    border: 1px solid;
+}
+
+.tableData {
+    border: 1px solid;
+} */
+
+.tableInputStyle{
+    height: 20px;
+}

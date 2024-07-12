@@ -1,0 +1,103 @@
+#soloEventRequestsPane {
+    /* background-color: #F3ECF6; */
+    width: 80.5%;
+    height: 98%;
+    margin-left: 22px;
+    border-radius: 5px;
+    position:absolute;
+    left: 240px;
+    top: 80px;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    overflow-y: auto;
+}
+
+.soloEventRequestsCardStyle {
+    background-color: #F3ECF6;
+    width: 95%;
+    height: 25%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.coloredBandDiv {
+    width: 10px;
+    height: 78%;
+    background-color: #a278d9;
+    margin-left: 8px;
+    border-radius: 3px;
+}
+
+.dateDestinationDivLeft {
+    width: 30%;
+    height: 78%;
+    /* background-color: lightsalmon; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    padding-top: 10px;
+}
+
+.dateDestinationDivRight {
+    width: 30%;
+    height: 78%;
+    padding-top: 10px;
+    /* background-color: lightsalmon; */
+    display: flex;
+    flex-direction: column;
+}
+
+.viewDetailsLinkDiv {
+    width: 37%;
+    height: 78%;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.destinationValueStyle {
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 8px;
+    font-size: 15px;
+}
+
+#eventP {
+    margin: 8px !important;
+    font-size: 15px !important;
+}
+
+.doneCloseButtonStyle {
+    border-radius: 50%;
+    border: none;
+    height: 54px;
+    width: 54px;
+    margin-right: 40px;
+}
+
+.doneCloseIconStyle {
+    font-size: 30px !important;
+    color: white;
+}
+
+.doneButtonStyle {
+    /* background-color: #25be2d; */
+    background-image: linear-gradient(to bottom right, #45bc0f, #a2f77b);
+}
+
+.closeButtonStyle {
+    /* background-color: #e75480; */
+    background-image: linear-gradient(to bottom right, #fa2690, #fc90c6);
+}

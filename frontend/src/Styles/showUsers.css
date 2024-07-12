@@ -1,0 +1,115 @@
+.wrapperDiv{
+    width: 80.5%;
+    height: 98%;
+    margin-left: 22px;
+    border-radius: 5px;
+    position:absolute;
+    left: 240px;
+    top: 100px;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.mainFilterPane{
+    height: auto;
+    width: 100%;
+    background-color: #947bdd;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.mainUsersPane{
+    height: auto;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.catDiv {
+    display: flex;
+    width: 100%;
+    margin-left: 20px;;
+}
+
+.filterInputStyle{
+    display: flex;
+    width: 100%;
+    margin-right: 40px;
+    height: 30px;
+}
+.filterButtonContainer {
+    display: flex;
+    height: 70%;
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-around;
+}
+#filterButton{
+    width: 70%;
+    margin-right: 40%;
+    height: auto;
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom right, #ffffff, #ffffff);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+tbody {
+    overflow: auto;
+}
+.tableStyle{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 99%;
+    margin-top: 20px;
+    border-bottom: #000000;
+    border-top: #000000;
+    border-spacing: 0px;
+    border: 5px;
+    
+}
+th{
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #e7dddd;
+    border-top: #e7dddd;
+    font-size: 11px;
+    border: 1px solid lightgrey;
+}
+td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #e7dddd;
+    border-top: #e7dddd;
+    font-size: 11px;
+    border: 1px solid lightgrey;
+}
+tr:hover{
+    background-color: #d8e4e6;
+    height: auto;
+    border: solid;
+}
+
+.dropFieldDiv {
+    display: flex;
+    width: 30%;
+}
+
+.radioStyle{
+    margin-left: 7%;
+    margin-right: 7%;
+
+}
+
+.dropDownAndLabelDiv {
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+}

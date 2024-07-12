@@ -1,0 +1,40 @@
+version: '3.9'
+
+services:
+
+  s3-upload:
+      build: ./s3-upload-service
+      restart: unless-stopped
+      env_file: ./.env
+      ports:
+        - $S3_DOCKER_PORT:$S3_LOCAL_PORT 
+      networks: 
+        - backend
+        
+  muscians-api:
+    build: ./backend
+    restart: unless-stopped
+    env_file: ./.env
+    ports:
+      - $NODE_DOCKER_PORT:$NODE_LOCAL_PORT
+    networks: 
+      - backend
+
+  muscians-ui:
+    depends_on:
+      - muscians-api
+    build:
+      context: ./frontend
+      args:
+        - REACT_APP_API_BASE_URL=$CLIENT_API_BASE_URL
+    ports:
+      - $REACT_DOCKER_PORT:$REACT_LOCAL_PORT
+    networks:
+      - backend
+
+
+volumes: 
+  db:
+
+networks:
+  backend:

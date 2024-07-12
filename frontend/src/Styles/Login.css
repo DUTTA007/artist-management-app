@@ -1,0 +1,115 @@
+#homeDiv {
+    height: 100%;
+    background-image: url('../Images/backTrial.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#appDiv {
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+
+#loginMainDiv {
+    width: 28%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: flex-end;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+#LoginHeadingDiv {
+    height: 18%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 28px;
+    color: #04284e;
+}
+
+#loginFormContainer {
+    height: 78%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#inputFieldsContainer {
+    display: flex;
+    flex-direction: column;
+    height: 46%;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.inputFieldLogin {
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+}
+
+.inputFieldLabel {
+    margin-bottom: 10px;
+    color: #04284e;
+}
+
+.inputFieldSpace {
+    height: 24px;
+}
+
+#submitButtonContainer {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+#navigateSignUpDiv {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+#navigateSignUpButton {
+    width: 35%;
+    height: 22px;
+    border: none;
+    background-image: linear-gradient(to bottom right, #1e81b0, #abdbe3);
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+}
+.navigateSignUpLabel {
+    font-size: 13px;
+    margin-right: 10px;
+}
+#submitButton {
+    width: 30%;
+    height: 30px;
+    border: none;
+    background-image: linear-gradient(to bottom right, #7b70fb, #ecc7f9);
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}

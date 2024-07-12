@@ -1,0 +1,107 @@
+#allClientLeadsPane {
+    width: 80.5%;
+    height: 98%;
+    margin-left: 22px;
+    border-radius: 5px;
+    position:absolute;
+    left: 240px;
+    top: 80px;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* justify-content: flex-start; */
+    align-items: center;
+    /* overflow-y: auto; */
+  }
+
+  #leadCard {
+    width: 96%;
+    height: 15%;
+    background-color: #F3ECF6;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-top: 5px;
+  }
+
+  #h2TagStyle {
+    margin: 14px;
+  }
+
+  #leadCardColorBandSeaGreen {
+    height: 90%;
+    width: 8px;
+    border-radius: 5px;
+    background-color: #77dd77;
+  }
+
+  #leadCardColorBand {
+    height: 90%;
+    width: 8px;
+    border-radius: 5px;
+    background-color: #FFC300;
+  }
+  
+  #leadCardPartI {
+    height: 100%;
+    width: 35%;
+    /* background-color: lightcyan; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 6px;
+  }
+
+  #leadCardPartII {
+    height: 100%;
+    width: 27%;
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 6px;
+  }
+
+
+  #leadCardPartIII {
+    height: 100%;
+    width: 31%;
+    /* background-color: lightpink; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 6px;
+  }
+
+  #leadCardPTag{
+    font-size: 15px !important;
+    text-align: left !important;
+    /* margin: 0; */
+  }
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}

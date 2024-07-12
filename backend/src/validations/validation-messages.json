@@ -1,0 +1,16 @@
+{
+   "INVALID_EMAIL_MESSAGE": "Enter Valid Email",
+   "INVALID_PASSWORD_MESSAGE": "Password must contain atleast 1 capital letter, 1 small letter, 1 number, 1 special character and must be atleast 8 characters long",
+   "AGE_ERROR_MESSAGE": "Age cannot be below 18",
+   "INVALID_ID_MESSAGE": "ID invalid.",
+   "ID_DOES_NOT_EXIST_MESSAGE": "ID does not exist. Please check the ID entered",
+   "EMAIL_DOES_NOT_EXIST_MESSAGE": "Email does not exist. Please check the email entered",
+   "EMAIL_ALREADY_EXISTS_MESSAGE": "Email already exists",
+   "GENERIC_MANDATORY_MESSAGE": "This field is mandatory",
+   "INVALID_FILTER_PARAM": "Invalid filter parameter entered",
+   "INVALID_FILTER_VALUE": "Invalid value for filtering entered",
+   "INVALID_IS_APPROVED": "Please check the value for is_approved field",
+   "INVALID_IS_PENDING": "Please check the value for is_pending field",
+   "INVALID_ROLE": "Invalid role entered",
+   "INVALID_REQUIREMENT": "Invalid requirement entered"
+}

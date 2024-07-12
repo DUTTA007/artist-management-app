@@ -1,0 +1,35 @@
+#artistFieldsDiv {
+    display: flex;
+}
+
+.artistInputField {
+    height: 24px;
+}
+
+.artistInputFieldExtended {
+    margin-left: 5px;
+}
+
+.artistInputFieldTop {
+    margin-top: 4px;
+}
+
+#addMoreButton {
+    margin-top: 10px;
+    /* width: 35%; */
+    height: 22px;
+    border: none;
+    background-image: linear-gradient(to bottom right, #1e81b0, #abdbe3);
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+}
+
+#removeButton {
+    height: 22px;
+    border: none;
+    background-image: linear-gradient(to bottom right, #1e81b0, #abdbe3);
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+}

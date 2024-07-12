@@ -1,0 +1,143 @@
+.navBar {
+    height: 80px;
+    width: 100%;
+    background-color: #8155BA;
+}
+
+.NavigationBar{
+background: #947bdd;
+height: 70px;
+width: 100%;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+
+.Logo{
+    height: 100px;
+    width: 5%;
+    display: flex;  
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Title{
+    height: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.messageDiv {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+#roleMessage {
+    color: white !important;
+    text-align: left !important;
+    margin-top: 5px !important;
+    font-size: 14px;
+}
+
+.userProfileIconDiv {
+    display: flex;
+    width: 6%;
+}
+
+.helloStringStyle{
+    color: white;
+    margin: 0;
+}
+
+.menu-container{
+    z-index: auto;
+}
+.MenuIcon {
+    position: absolute;
+    top: -5px;
+    cursor: pointer;
+    padding-right: 100px;
+    height: 100px;
+    width: 27%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 75px;
+    right: 3px;
+    background-color: #947bdd;
+    border-color: black;
+    border-radius: var(--border-radius);
+    padding: 20px 0px;
+    width: 180px;
+    align-items: center;
+}
+.dropdown-menu::before {
+    content: '';
+    position: relative;
+    top: -5px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    background: var(--secondary-bg);
+    transform: rotate(45deg);
+}
+.dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+    z-index: 1;
+}
+
+.dropdown-menu.inactive {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--speed) ease;
+}
+
+.dropdown-menu ul li {
+    border-color: black;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-menu ul li:hover{
+   
+    cursor: pointer;
+    background-color:  #6E38B0;
+    
+}
+#myUl{
+padding-inline-start: 0px;
+}
+
+.dropdownItem {
+    display: flex;
+    margin: 10px auto;
+}
+
+.dropdownItem a {
+    
+    transition: var(--speed);
+    color: white;
+    width: 100%;
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
